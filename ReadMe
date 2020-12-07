@@ -1,0 +1,55 @@
+shell.c:
+It is the main shell file.
+
+pwd.c:
+Gives present working directory.
+<username@systemnme:~>pwd
+>>present working directory
+
+printline.c:
+Printing of <username@system_name:curr_dir> is handled by this.
+
+pinfo.c:
+-​ pinfo ​ : prints the process related info of your shell program.
+-​ pinfo <pid> ​ : prints the process info about given pid.
+
+makefile.sh:
+compiles all nessary files shell.
+run by typing bash makefile.sh
+
+ls.c:
+Lists all files in various formats.
+- ls
+- ls -l
+- ls -la
+- ls -al
+- ls -a
+- ls <Dirname>
+
+In ls -l and similar comands file name is printed in next line.
+
+cd.c:
+Change Directory
+**Assumptions**
+
+*ALLOWED:
+     cd ~/Ayush/Goyal
+     cd ./xyz/abc
+     cd ..
+     cd ../../../goyal
+*NOT ALLOWED
+     cd ./../cs
+     cd ~/Ayush/../Downloads
+     cd /home/Ayush
+     cd ayush
+
+restall.c contains foreground and background.
+
+pipe.c contains piping comands.
+reddir. contains redirection commands. 
+
+
+
+All other commands are treated as system commands like : emacs, vi and so on. The shell will be able to
+execute them either in the background or in the foreground.
+For background put "&" in last.
